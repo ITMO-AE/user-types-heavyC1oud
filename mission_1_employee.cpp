@@ -13,7 +13,10 @@ void Employee::promote()
 
 void Employee::demote()
 {
-    category--;
+	//	уменьшение величины категории только если текущее значение не ноль
+	if(category) {
+		category--;
+	}   
 }
 
 void Employee::printInfo()
